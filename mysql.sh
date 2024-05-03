@@ -2,9 +2,9 @@
 
 source ./common.sh
 
-checkroot()
+checkroot
 
-echo "please enter DB Password"
+echo " please enter DB Password "
 read mysql_root_password
 
 
