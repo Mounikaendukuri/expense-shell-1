@@ -7,13 +7,8 @@ checkroot
 echo " please enter DB Password "
 read mysql_root_password
 
-
-dnf install mysql-serrrver -y &>>$LOGFILE
-
-
+dnf install mysql-server -y &>>$LOGFILE
 systemctl enable mysqld &>>$LOGFILE
-
-
 systemctl start mysqld &>>$LOGFILE
 
 
