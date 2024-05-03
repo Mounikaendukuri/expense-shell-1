@@ -33,7 +33,7 @@ npm install &>>LOGFILE
 
 # (vim /etc/systemd/system/backend.service) we are not using vim becz shell script wont use vim is for manual so we are giving the absolute path for the backend file
 
-cp /home/ec2-user/expense-shell/backend.service /etc/systemd/system/backend.service &>>LOGFILE
+cp /home/ec2-user/expense-shell-1/backend.service /etc/systemd/system/backend.service &>>LOGFILE
 
 
 systemctl daemon-reload &>>LOGFILE
