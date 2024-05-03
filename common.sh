@@ -1,5 +1,12 @@
 #!/bin/bash
 
+set -e
+error_handling(){
+    echo "getting error at line number $1 and the command is $2"
+}
+
+trap 'error_handling ${LINENO} "$BASH_COMMAND" 'ERR
+
 USERID=$(id -u)
 TIMESTAMP=$(date +%F-%H-%M_%S)
 SCRIPT_NAME=$( echo $0 | cut -d "." -f1)
